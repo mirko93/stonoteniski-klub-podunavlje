@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  font-family: "Oswald", Arial, sans-serif;
+}
+
 @keyframes slider {
   0% {
     transform: translateX(0);
