@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive animation speed / distance */
+@media (min-width: 768px) {
+  .animate-\[slider_60s_linear_infinite\] {
+    animation: slider 30s linear infinite;
+  }
+}
+
+@media (max-width: 767px) {
+  .animate-\[slider_60s_linear_infinite\] {
+    animation: slider 10s linear infinite;
+  }
+}
